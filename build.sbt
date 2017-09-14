@@ -8,6 +8,8 @@ scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
   javaJdbc,
+  evolutions,
+  jdbc,
   "com.typesafe.play" %% "anorm" % "2.5.0",
   "mysql" % "mysql-connector-java" % "5.1.23",
   cache,
@@ -16,5 +18,4 @@ libraryDependencies ++= Seq(
 )
 
 
-
-fork in run := true
+fork in run := false
