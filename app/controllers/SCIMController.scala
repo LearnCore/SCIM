@@ -1,14 +1,13 @@
 package controllers
 
-import javax.inject._
-import java.sql.ResultSet
-import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException
-
 import play.api.db.Database
 import play.api.mvc._
 import play.api.libs.json._
 
-// import scala.concurrent.ExecutionContext.Implicits.global
+import javax.inject._
+import java.sql.ResultSet
+
+import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException
 
 class SCIMController @Inject() (db:Database) extends Controller {
 
